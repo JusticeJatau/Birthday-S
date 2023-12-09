@@ -102,7 +102,7 @@
   
   <div class="mask"></div>
   <div class="slide">
-    <img class="img"src="images/profile.jpg">
+    <a class="link"><img class="img"src="images/profile.jpg"></a>
   </div>
   
   <div class="text-container">
@@ -451,10 +451,12 @@ body{
   </style>
 <script>
   const image = document.querySelector(".img")
+  const link = document.querySelector(".link")
 
 const animateImage = () =>{
     setTimeout(() => {
         image.src = "img1.jpg"
+        link.href = "https://github.com/JusticeJatau/Birthday-S/blob/main/img1.jpg"
     }, 0);
     setTimeout(() => {
         image.src = "img2.jpg"
